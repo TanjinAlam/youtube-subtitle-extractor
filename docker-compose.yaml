@@ -1,0 +1,9 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: youtube-news
+    volumes:
+      - .:/app
